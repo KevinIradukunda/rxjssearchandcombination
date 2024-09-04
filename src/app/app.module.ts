@@ -1,27 +1,41 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { SearchInputComponent } from './components/search-input/search-input.component';
-import { SearchResultsComponent } from './components/search-results/search-results.component';
-import { CombineDataComponent } from './components/combine-data/combine-data.component';
+import { SearchComponent } from './components/search/search.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchInputComponent,
-    SearchResultsComponent,
-    CombineDataComponent
+    SearchComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatListModule,
+    MatSnackBarModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatProgressSpinnerModule,
+    BrowserAnimationsModule
   ],
   providers: [
-    provideClientHydration(),
-    provideAnimationsAsync('noop')
+
   ],
   bootstrap: [AppComponent]
 })

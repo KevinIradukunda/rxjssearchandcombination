@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CombineDataComponent } from './combine-data.component';
+import { SearchComponent } from './search.component';
 
-describe('CombineDataComponent', () => {
-  let component: CombineDataComponent;
-  let fixture: ComponentFixture<CombineDataComponent>;
+describe('SearchComponent', () => {
+  let component: SearchComponent;
+  let fixture: ComponentFixture<SearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [CombineDataComponent]
+      declarations: [SearchComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CombineDataComponent);
+    fixture = TestBed.createComponent(SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,18 @@
+.app-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  mat-card {
+    width: 600px;
+    padding: 20px;
+  }
+  
+  mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  

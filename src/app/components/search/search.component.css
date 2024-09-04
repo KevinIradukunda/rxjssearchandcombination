@@ -1,0 +1,23 @@
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  .loading-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .error-snackbar {
+    background-color: #f44336; /* Red color for errors */
+    color: white;
+  }
+  
